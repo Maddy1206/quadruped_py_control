@@ -34,6 +34,7 @@ sudo make install
 If you do not clone the repository with git the pybind11 folder will be empty. You can download the pybind11 library seperately and put it in the specific folder.
 
 Make sure the path to the pybind11 files will be `/quadruped_py_control/python_wrapper/third-party/pybind11/`. Do not add another pybind11 folder!
+
 If you cannot find `msgpack.hpp` while compiling, run:
 
 `sudo apt get libmsgpack*`
