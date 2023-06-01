@@ -64,7 +64,7 @@ sudo ./example_walk
 ```
 and the Python commands with
 ```
-sudo python3 py_test.py
+sudo python3 example_walk.py
 ```
 in the respective folder.
 
