@@ -9,7 +9,7 @@ add_subdirectory(python_wrapper)
 
 add_compile_options(-std=c++14)
 
-set(EXTRA_LIBS -pthread libunitree_legged_sdk_amd64.so lcm)
+set(EXTRA_LIBS -pthread libunitree_legged_sdk_amd64.so lcm) # change to libunitree_legged_sdk_arm64.so when working with the NX
 
 set(CMAKE_CXX_FLAGS "-O3")
 
@@ -47,9 +47,9 @@ target_link_libraries(udp_recv_test ${EXTRA_LIBS})
 add_executable(lcm_server examples/lcm_server.cpp)
 target_link_libraries(lcm_server ${EXTRA_LIBS})
 
-install(TARGETS
-	example_position example_velocity example_torque example_walk
-	DESTINATION bin/unitree)
-install(DIRECTORY lib/
-	DESTINATION lib/unitree
-	USE_SOURCE_PERMISSIONS)
+#install(TARGETS
+#	example_position example_velocity example_torque example_walk
+#	DESTINATION bin/unitree)
+#install(DIRECTORY lib/
+#	DESTINATION lib/unitree
+#	USE_SOURCE_PERMISSIONS)
