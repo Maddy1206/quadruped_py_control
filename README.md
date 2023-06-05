@@ -46,7 +46,7 @@ If you cannot find `git`, run:
 
 If you cannot find `msgpack.hpp` while compiling, run:
 
-`sudo apt get libmsgpack*`
+`sudo apt-get install libmsgpack*`
 
 In `python_interface.cpp` all C-Style arrays have been commented out. Pybind11 does not support the direct conversion of C-Arrays to Python lists. A workaround may be found [here](https://github.com/pybind/pybind11/issues/2149).
 
