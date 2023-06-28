@@ -7,7 +7,7 @@ This is a reference library which uses the [unitree_legged_sdk v3.2](https://git
 
 Python functionality is added through [pybind11](https://github.com/pybind/pybind11) and built with CMake.
 
-This repository was created while working for the KISS Project at the Hochschule Furtwangen University.
+This repository was created while working for the [KISS Project](https://projekt-kiss.net/) at the Hochschule Furtwangen University.
 
 ## Quick Installation Guide
 Download the repository:
