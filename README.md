@@ -7,6 +7,20 @@ This is a reference library which uses the [unitree_legged_sdk v3.2](https://git
 
 Python functionality is added through [pybind11](https://github.com/pybind/pybind11) and built with CMake.
 
+This repository was created while working for the KISS Project at the Hochschule Furtwangen University.
+
+## Quick Installation Guide
+Download the repository:
+```
+git clone https://github.com/Maddy1206/quadruped_py_control.git
+cd quadruped_py_control/python_wrapper/third-pary
+git clone https://github.com/pybind/pybind11.git
+```
+Python scripts can be started already because the pre-compiled libraries are downloaded with this repository.
+
+If you want to run the robot with C++ programs you need to build them first.
+Head over to [Building](#building).
+
 ## Dependencies
 - [Boost](https://www.boost.org/) (version 1.5.4 or higher)
 - [CMake](https://cmake.org/) (version 2.8.3 or higher)
