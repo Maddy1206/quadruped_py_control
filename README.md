@@ -54,6 +54,8 @@ cd ~/quadruped_py_control/python_wrapper/third-party
 git clone https://github.com/pybind/pybind11.git
 ```
 
+The source code of the [pyrealsense2 library](https://github.com/IntelRealSense/librealsense/releases/tag/v2.53.1) has not been added to this repo because the compiling process takes longer than 30 minutes. Instead, the pre-compiled libraries have been added to `/lib/python/`.
+
 If you cannot find `git`, run:
 
 `sudo apt-get install git`
