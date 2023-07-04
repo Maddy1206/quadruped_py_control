@@ -1,4 +1,12 @@
-
+##########################################################
+#        Pythonic Robot Control for Unitree A1           #
+#            for unitree_legged_sdk v3.2                 #
+#    KISS Project at Hochschule Furtwangen University    #
+##########################################################
+# If you encounter any problems or need help in general, #
+#         feel free to open an issue on GitHub           #
+# ~ M. Untenberger                                       #
+##########################################################
 
 import sys 
 sys.path.append('/home/unitree/quadruped_py_control/lib/python/')
