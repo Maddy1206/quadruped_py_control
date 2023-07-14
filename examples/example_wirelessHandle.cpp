@@ -45,7 +45,7 @@ void Custom::RobotControl()
     motiontime++;
     udp.GetRecv(state);
 
-    memcpy(&_keyData, state.wirelessRemote, 40);
+    memcpy(&_keyData, &state.wirelessRemote, 40);
 
     if((int)_keyData.btn.components.A == 1){
         std::cout << "The key A is pressed, and the value of lx is " << _keyData.lx << std::endl;
