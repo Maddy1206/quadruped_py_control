@@ -11,8 +11,7 @@
 import sys, time, math
 import numpy as np
 import cv2
-
-sys.path.append('/home/unitree/quadruped_py_control/lib/python') # change the path to the respective folder
+sys.path.append('../lib/python') # change the path to the respective folder
 import pyrealsense2 as rs           # Import the CPython Realsense library
 import robot_interface as sdk       # Import the CPython Interface library
 

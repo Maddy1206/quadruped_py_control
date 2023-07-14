@@ -25,7 +25,7 @@ Keyboard:
     [q\ESC] Quit
 """
 import sys 
-sys.path.append('/home/unitree/quadruped_py_control/lib/python/')
+sys.path.append('../lib/python')
 import math
 import time
 import cv2

@@ -5,7 +5,7 @@
 ##      Open CV and Numpy integration        ##
 ###############################################
 import sys 
-sys.path.append('/home/unitree/quadruped_py_control/lib/python/')
+sys.path.append('../lib/python')
 
 import pyrealsense2 as rs
 import numpy as np

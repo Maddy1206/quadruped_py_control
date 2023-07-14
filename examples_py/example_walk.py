@@ -12,7 +12,7 @@ import sys
 import time
 import math
 
-sys.path.append('/home/ros/unitree_legged_sdk_py11/lib/python')
+sys.path.append('../lib/python')
 
 import robot_interface as sdk       # Import the CPython library 
 

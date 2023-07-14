@@ -5,7 +5,7 @@
 ##              Align Depth to Color               ##
 #####################################################
 import sys 
-sys.path.append('/home/unitree/quadruped_py_control/lib/python/')
+sys.path.append('../lib/python')
 # First import the library
 import pyrealsense2 as rs
 # Import Numpy for easy array manipulation
