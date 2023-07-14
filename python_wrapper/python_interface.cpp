@@ -10,14 +10,6 @@
 #include <vector>
 #include <msgpack.hpp>
 
-/*
-ALL ARRAY TYPES HAVE BEEN COMMENTED OUT!!!
-PYBIND11 DOES NOT  SUPPORT C-STYLE ARRAYS!
-https://github.com/pybind/pybind11/issues/2149
-
-THERE MAY BE WORKAROUNDS AVAILABLE BUT NOT YET TESTED FOR THIS LIBRARY!
-*/
-
 using namespace UNITREE_LEGGED_SDK;
 
 namespace py = pybind11;
@@ -73,10 +65,10 @@ PYBIND11_MODULE(robot_interface, m) {
 
     py::class_<IMU>(m, "IMU")
         .def(py::init<>())
-        //.def_readwrite("quaternion", &IMU::quaternion)
-        //.def_readwrite("gyroscope", &IMU::gyroscope)
-        //.def_readwrite("accelerometer", &IMU::accelerometer)
-        //.def_readwrite("rpy", &IMU::rpy)
+        .def_readwrite("quaternion", &IMU::quaternion)
+        .def_readwrite("gyroscope", &IMU::gyroscope)
+        .def_readwrite("accelerometer", &IMU::accelerometer)
+        .def_readwrite("rpy", &IMU::rpy)
         .def_readwrite("temperature", &IMU::temperature);
 
     py::class_<LED>(m, "LED")
@@ -96,7 +88,7 @@ PYBIND11_MODULE(robot_interface, m) {
         .def_readwrite("dq_raw", &MotorState::dq_raw)
         .def_readwrite("ddq_raw", &MotorState::ddq_raw)
         .def_readwrite("temperature", &MotorState::temperature);
-        //.def_readwrite("reserve", &MotorState::reserve);
+        .def_readwrite("reserve", &MotorState::reserve);
 
     py::class_<MotorCmd>(m, "MotorCmd")
         .def(py::init<>())
@@ -106,7 +98,7 @@ PYBIND11_MODULE(robot_interface, m) {
         .def_readwrite("tau", &MotorCmd::tau)
         .def_readwrite("Kp", &MotorCmd::Kp)
         .def_readwrite("Kd", &MotorCmd::Kd);
-        //.def_readwrite("reserve", &MotorCmd::reserve);
+        .def_readwrite("reserve", &MotorCmd::reserve);
 
     py::class_<LowState>(m, "LowState")
         .def(py::init<>())
@@ -116,11 +108,11 @@ PYBIND11_MODULE(robot_interface, m) {
         .def_readwrite("SN", &LowState::SN)
         .def_readwrite("bandWidth", &LowState::bandWidth)
         .def_readwrite("imu", &LowState::imu)
-        //.def_readwrite("motorState", &LowState::motorState)
-        //.def_readwrite("footForce", &LowState::footForce)
-        //.def_readwrite("footForceEst", &LowState::footForceEst)
+        .def_readwrite("motorState", &LowState::motorState)
+        .def_readwrite("footForce", &LowState::footForce)
+        .def_readwrite("footForceEst", &LowState::footForceEst)
         .def_readwrite("tick", &LowState::tick)
-        //.def_readwrite("wirelessRemote", &LowState::wirelessRemote)
+        .def_readwrite("wirelessRemote", &LowState::wirelessRemote)
         .def_readwrite("reserve", &LowState::reserve)
         .def_readwrite("crc", &LowState::crc);
 
@@ -131,9 +123,9 @@ PYBIND11_MODULE(robot_interface, m) {
         .def_readwrite("robotID", &LowCmd::robotID)
         .def_readwrite("SN", &LowCmd::SN)
         .def_readwrite("bandWidth", &LowCmd::bandWidth)
-        //.def_readwrite("motorCmd", &LowCmd::motorCmd)
-        //.def_readwrite("led", &LowCmd::led)
-        //.def_readwrite("wirelessRemote", &LowCmd::wirelessRemote)
+        .def_readwrite("motorCmd", &LowCmd::motorCmd)
+        .def_readwrite("led", &LowCmd::led)
+        .def_readwrite("wirelessRemote", &LowCmd::wirelessRemote)
         .def_readwrite("reserve", &LowCmd::reserve)
         .def_readwrite("crc", &LowCmd::crc);
 
@@ -153,12 +145,12 @@ PYBIND11_MODULE(robot_interface, m) {
         .def_readwrite("updownSpeed", &HighState::updownSpeed)
         .def_readwrite("forwardPosition", &HighState::forwardPosition)
         .def_readwrite("sidePosition", &HighState::sidePosition)
-        //.def_readwrite("footPosition2Body", &HighState::footPosition2Body)
-        //.def_readwrite("footSpeed2Body", &HighState::footSpeed2Body)
-        //.def_readwrite("footForce", &HighState::footForce)
-        //.def_readwrite("footForceEst", &HighState::footForceEst)
+        .def_readwrite("footPosition2Body", &HighState::footPosition2Body)
+        .def_readwrite("footSpeed2Body", &HighState::footSpeed2Body)
+        .def_readwrite("footForce", &HighState::footForce)
+        .def_readwrite("footForceEst", &HighState::footForceEst)
         .def_readwrite("tick", &HighState::tick)
-        //.def_readwrite("wirelessRemote", &HighState::wirelessRemote)
+        .def_readwrite("wirelessRemote", &HighState::wirelessRemote)
         .def_readwrite("reserve", &HighState::reserve)
         .def_readwrite("crc", &HighState::crc);
 
@@ -178,9 +170,9 @@ PYBIND11_MODULE(robot_interface, m) {
         .def_readwrite("yaw", &HighCmd::yaw)
         .def_readwrite("pitch", &HighCmd::pitch)
         .def_readwrite("roll", &HighCmd::roll)
-        //.def_readwrite("led", &HighCmd::led)
-        //.def_readwrite("wirelessRemote", &HighCmd::wirelessRemote)
-        //.def_readwrite("AppRemote", &HighCmd::AppRemote)
+        .def_readwrite("led", &HighCmd::led)
+        .def_readwrite("wirelessRemote", &HighCmd::wirelessRemote)
+        .def_readwrite("AppRemote", &HighCmd::AppRemote)
         .def_readwrite("reserve", &HighCmd::reserve)
         .def_readwrite("crc", &HighCmd::crc);
 
