@@ -64,7 +64,7 @@ If you cannot find `msgpack.hpp` while compiling, run:
 
 `sudo apt-get install libmsgpack*`
 
-In `python_interface.cpp` all C-Style arrays have been commented out. Pybind11 does not support the direct conversion of C-Arrays to Python lists. A workaround may be found [here](https://github.com/pybind/pybind11/issues/2149).
+In `python_interface.cpp` the exposure of C++ classes and types is declared with the help of [pybind11](https://github.com/pybind/pybind11).
 
 In both `CMakeLists.txt` the compiler standard has been set to **14** due to compatibility reasons with pybind11.
 
