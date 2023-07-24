@@ -13,7 +13,7 @@ This repository was created while working for the [KISS Project](https://projekt
 Download the repository:
 ```
 git clone https://github.com/Maddy1206/quadruped_py_control.git
-cd quadruped_py_control/python_wrapper/third-pary
+cd quadruped_py_control/python_wrapper/third-party/
 git clone https://github.com/pybind/pybind11.git
 ```
 Python scripts can be started already because the pre-compiled libraries are downloaded with this repository.
@@ -25,14 +25,14 @@ Head over to [Building](#building).
 - [Boost](https://www.boost.org/) (version 1.5.4 or higher)
 - [CMake](https://cmake.org/) (version 2.8.3 or higher)
 - [LCM](https://github.com/lcm-proj/lcm/releases) (version 1.4.0)
-- [g++](https://gcc.gnu.org/) (version 8.3.0 or higher)
+- [g++](https://gcc.gnu.org/) (version 7.5.0 or higher)
 - [pybind11](https://github.com/pybind/pybind11) (version 2.10.4 or higher)
 - [Python](https://www.python.org/) (version 3.6)
 
 Install Boost, CMake, the latest 8.x version of g++ and the latest version of Python 3.6 with the following command:
 ```
 sudo apt-get update
-sudo apt-get install libboost-all-dev make cmake g++-8 gcc-8 python3.6
+sudo apt-get install libboost-all-dev make cmake g++-7 gcc-7 python3.6
 ```
 
 Download LCM and unzip to `/home/[username]` and build the software:

@@ -9,7 +9,7 @@ add_subdirectory(python_wrapper)
 
 add_compile_options(-std=c++14)
 
-set(EXTRA_LIBS -pthread libunitree_legged_sdk_amd64.so lcm) # change to libunitree_legged_sdk_arm64.so when working with the NX
+set(EXTRA_LIBS -pthread libunitree_legged_sdk_arm64.so lcm) # change to libunitree_legged_sdk_amd64.so when working with the Pi
 
 set(CMAKE_CXX_FLAGS "-O3")
 
