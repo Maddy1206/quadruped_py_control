@@ -28,7 +28,6 @@ motiontime = 0
 cmd.forwardSpeed = 0
 cmd.mode = 0
 cmd.rotateSpeed = 0
-cmd.sideSpeed = 0.15 # nullify uneven calibration
 
 pipeline = rs.pipeline()
 config = rs.config()
