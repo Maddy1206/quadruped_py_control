@@ -50,8 +50,7 @@ sudo make install
 ## Libraries
 
 You must download the pybind11 library seperately and put it in the specific folder.
-
-Make sure the path to the pybind11 files will be `/quadruped_py_control/python_wrapper/third-party/pybind11/`. Copy all files from the download to the pybind11-folder in this repository or use `git`:
+Make sure the path to the pybind11 files will be `/quadruped_py_control/python_wrapper/third-party/pybind11/`. Copy all files from the download to the pybind11-folder in this repository or use `git` (if you used the `--recursive` flag, the pybind11 repo is already in the folder).
 
 ```
 cd ~/quadruped_py_control/python_wrapper/third-party
