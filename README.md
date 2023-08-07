@@ -1,9 +1,5 @@
 # Pythonic control functions
 
-Limited to the **Unitree A1 _and_ SDK version 3.2.**
-
-**HIGHLEVEL functions** only!
-
 This is a reference library which uses the [unitree_legged_sdk v3.2](https://github.com/unitreerobotics/unitree_legged_sdk).
 
 Python functionality is added through [pybind11](https://github.com/pybind/pybind11) and built with CMake.
