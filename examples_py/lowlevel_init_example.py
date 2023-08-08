@@ -41,6 +41,11 @@ if __name__ == '__main__':
 
         "RL_0": 9, "RL_1": 10, "RL2": 11, # Rear Left; 0 = Shoulder (inwards), 1 = Shoulder (outwards), 2 = leg joint
     }
+
+    print("\nCommunication is set to LOWLEVEL.")
+    print("Make sure the robot is hung up or has enough space to move joints!")
+    s = input("Press ENTER to continue or STRG+C to abort...")
+    
     while True:
         time.sleep(0.01)
 
