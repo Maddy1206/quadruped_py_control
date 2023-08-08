@@ -18,6 +18,12 @@ git clone --recursive https://github.com/Maddy1206/quadruped_py_control.git
 
 Python scripts can be started already because the pre-compiled libraries are downloaded with this repository.
 
+The Robot can be initialized in `LOWLEVEL` and `HIGHLEVEL` mode. `LOWLEVEL` lets you gain control over each joint independently, whereas `HIGHLEVEL` lets you walk the robot instantly.
+
+[`LOWLEVEL` example.](https://github.com/Maddy1206/quadruped_py_control/blob/main/examples_py/lowlevel_init_example.py)
+
+[`HIGHLEVEL` example.](https://github.com/Maddy1206/quadruped_py_control/blob/main/examples_py/example_walk.py)
+
 If you want to run the robot with C++ programs you need to build them first.
 Head over to [Building](#building).
 
