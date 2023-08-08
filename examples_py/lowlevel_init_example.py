@@ -32,6 +32,15 @@ if __name__ == '__main__':
     udp.InitCmdData(cmd)
     safe = sdk.Safety(A1)
 
+    joint_dict = {
+        "FR_0": 0, "FR_0": 1, "FR_2": 2, # Front Right; 0 = Shoulder (inwards), 1 = Shoulder (outwards), 2 = leg joint
+        
+        "FL_0": 3, "FL_0": 4, "FL_2": 5, # Front Left; 0 = Shoulder (inwards), 1 = Shoulder (outwards), 2 = leg joint
+
+        "RR_0": 6, "RR_1": 7, "RR_2": 8, # Rear Right; 0 = Shoulder (inwards), 1 = Shoulder (outwards), 2 = leg joint
+
+        "RL_0": 9, "RL_1": 10, "RL2": 11, # Rear Left; 0 = Shoulder (inwards), 1 = Shoulder (outwards), 2 = leg joint
+    }
     while True:
         time.sleep(0.01)
 
@@ -45,8 +54,12 @@ if __name__ == '__main__':
         print(state.footPosition2Body[0].x)
         print(state.footPosition2Body[0].y)
         print(state.footPosition2Body[0].z, "\n")
+        print("states on front right shoulder (inwards):")
+        print(state.motorState[0].q)
+        print(state.motorState[0].dq)
+        print(state.motorState[0].dq)
 
-        # print(state.imu.temperature)
+        
         
         ### examples as to initialize movements can be found in the example_velocity.cpp, example_position.cpp and example_torque.cpp.
         
