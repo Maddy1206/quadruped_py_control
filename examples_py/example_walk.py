@@ -5,7 +5,6 @@
 ##########################################################
 # If you encounter any problems or need help in general, #
 #         feel free to open an issue on GitHub           #
-# ~ M. Untenberger                                       #
 ##########################################################
 
 import sys
