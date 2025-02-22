@@ -87,7 +87,7 @@ PYBIND11_MODULE(robot_interface, m) {
         .def_readwrite("q_raw", &MotorState::q_raw)
         .def_readwrite("dq_raw", &MotorState::dq_raw)
         .def_readwrite("ddq_raw", &MotorState::ddq_raw)
-        .def_readwrite("temperature", &MotorState::temperature);
+        .def_readwrite("temperature", &MotorState::temperature)
         .def_readwrite("reserve", &MotorState::reserve);
 
     py::class_<MotorCmd>(m, "MotorCmd")
@@ -97,7 +97,7 @@ PYBIND11_MODULE(robot_interface, m) {
         .def_readwrite("dq", &MotorCmd::dq)
         .def_readwrite("tau", &MotorCmd::tau)
         .def_readwrite("Kp", &MotorCmd::Kp)
-        .def_readwrite("Kd", &MotorCmd::Kd);
+        .def_readwrite("Kd", &MotorCmd::Kd)
         .def_readwrite("reserve", &MotorCmd::reserve);
 
     py::class_<LowState>(m, "LowState")
